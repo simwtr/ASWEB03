@@ -12,8 +12,8 @@
 **Шаг 2**
   Создание папки asweb3, в созданной папке asweb3 создать папки: database, files, site.
   
-  ![image](https://github.com/simwtr/ASWEB03/assets/103261387/251c8e31-35dc-45bb-97b8-a10a0d64df95)
-  
+  ![image (1)](https://github.com/simwtr/ASWEB03/assets/103261387/50f7fc9d-bfa3-428c-bf65-dbf565c49ffd)
+
 **Шаг 3**
   Скачать Wordpress с официального сайта и распаковать в папку site.
   
