@@ -7,7 +7,7 @@
 **Шаг 1**
   Проверка наличия Docker
   
-  ![image](https://github.com/simwtr/ASWEB03/assets/103261387/d7d741c6-2960-4b43-ab86-59b0cdb652db)
+  ![image](https://github.com/simwtr/ASWEB03/assets/103261387/97fa1bef-31d9-42f6-8a99-a13b42e20922)
 
 **Шаг 2**
   Создание папки asweb3, в созданной папке asweb3 создать папки: database, files, site.
