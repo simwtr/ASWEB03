@@ -20,13 +20,18 @@
   ![image](https://github.com/simwtr/ASWEB03/assets/103261387/ae0723df-a1e4-4eec-bb71-5f245daa7d4c)
   
 **Шаг 4**
-  Создание конфигурационного файла для Apache HTTP Server.(docker run -d --name httpd httpd:2.4)
+  Создание конфигурационного файла для Apache HTTP Server.
+
+  ![image (2)](https://github.com/simwtr/ASWEB03/assets/103261387/95d29923-ac34-43cf-8195-f67df6926e8c)
 
   Скопировать конфигурационный файл из контейнера в папку(docker cp httpd:/usr/local/apache2/conf/httpd.conf .\files\httpd\httpd.conf)
 
+  ![image (4)](https://github.com/simwtr/ASWEB03/assets/103261387/8af892d1-4c4d-410b-97bf-ef18626db67b)
+  
   Остановить контейнер httpd
-
   Удалить httpd контейнер
+
+![image (3)](https://github.com/simwtr/ASWEB03/assets/103261387/e24178c0-bf16-44a1-9e7d-1092988f5b08)
 
   В созданном файле в папке \files\httpd\httpd.conf необходимо расскоментипровать строки 
     1. mod_proxy.so
@@ -68,23 +73,38 @@
  
 **Шаг 9**
   Запуск и тестирование
+  
   Перейти в папку asweb3 и запустить сборку образов сервисов.(docker-compose build)
 
+![image](https://github.com/simwtr/ASWEB03/assets/103261387/7693a98d-beb0-43fd-ba0b-7202b89d12b8)
+
   Запуск контейнеров(docker-compose up -d)
+
+![image](https://github.com/simwtr/ASWEB03/assets/103261387/23ea434b-6e61-45cf-9e57-ca3018dee577)
 
   Открыть в браузере страницу wordpress.localhost
 
   Произвести установку сайта
 
+![image](https://github.com/simwtr/ASWEB03/assets/103261387/7a4e55d4-ec6e-4a48-8b71-2590a93b1312)
+
   Остановка контейнеров(docker-compose down)
+
+![image](https://github.com/simwtr/ASWEB03/assets/103261387/fa0f9d52-e6db-4079-9b7c-d48857f229ce)
 
   Удалить контейнеры(docker-compose rm)
 
   Проверка открывается ли сайт. Сайт не должен запуститься
-  
+
+  ![image](https://github.com/simwtr/ASWEB03/assets/103261387/e6c92a16-d8e2-46f4-849d-f297dd48f5e8)
+
   Снова запустить кластер контейнеров(docker-compose up -d)
 
+![image](https://github.com/simwtr/ASWEB03/assets/103261387/23ea434b-6e61-45cf-9e57-ca3018dee577)
+
   Проверка работоспособности сайта.
+  
+![image](https://github.com/simwtr/ASWEB03/assets/103261387/7a4e55d4-ec6e-4a48-8b71-2590a93b1312)
 
 **Вопросы:**
 1. Сколько секунд собирался проект?
